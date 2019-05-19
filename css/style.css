@@ -1,0 +1,45 @@
+body {
+	font-family: "微軟正黑體";
+    background: #F5F5DC;
+}
+
+a {
+    color: #663399;
+	text-decoration: none;
+}
+a:hover {
+	color: #FF1493;
+}
+a:visited {
+    color: #663399;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14pt;
+}
+th {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+	color: #000000;
+	background-color: #DEB887;
+}
+td {
+    padding: 8px;
+}
+thead {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+	color: #000000;
+	background-color: #F8F8F8;
+}
+tbody {
+    padding: 8px;
+    text-align: left;
+}
+tbody:hover {
+	background-color: #FFFAF0;
+}
