@@ -71,7 +71,7 @@ if ( !isset($_GET["field"]) ) {
 $rows = mysqli_query($db, $sql);
 
 $total_records = mysqli_num_rows($rows);
-$records_per_page = 10;
+$records_per_page = 30;
 $total_pages = ceil($total_records/$records_per_page);
 
 if ( !isset($_GET["page"]) ) {
