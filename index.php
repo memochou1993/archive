@@ -12,19 +12,19 @@
 </head>
 <body>
 	<?php
-	if ( !isset($_GET["site"]) ) {
-		if ( time() > $_SESSION["time"] + 600 ) {
-		?>
+    if (!isset($_GET["site"])) {
+        if (time() > ($_SESSION["time"] ?? 0) + 600) {
+            ?>
 			<script>
 				location.href = "?site=check";
 			</script>
 		<?php
-		} else {
-			include "sites/work.php";
-		}
-	} else {
-		include "sites/".$_GET["site"].".php";
-	}
-	?>
+        } else {
+            include "sites/work.php";
+        }
+    } else {
+        include "sites/".$_GET["site"].".php";
+    }
+    ?>
 </body>
 </html>
