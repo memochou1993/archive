@@ -1,11 +1,13 @@
 <?php
 $valid = $_POST["valid"] ?? "";
+
 if ($valid == "true") {
     $_SESSION["time"] = time();
-    header("Location: " . "./");
+    header("Location: "."./");
 }
+
 if ($valid == "false") {
-    header("Location: " . "http://portfolio.epoch.tw");
+    header("Location: "."http://portfolio.epoch.tw");
 }
 ?>
 <link href="images/memo.ico" rel="shortcut icon" type="images/ico">

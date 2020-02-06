@@ -1,5 +1,5 @@
 <?php
-    require "database.inc.php";
+require "database.inc.php";
 ?>
 <!doctype html>
 <html>
@@ -11,19 +11,22 @@
     <link rel="stylesheet" type="text/css" href="css/table.css">
 </head>
 <body>
-	<?php
-    if (!isset($_GET["site"])) {
-        if (time() > ($_SESSION["time"] ?? 0) + 600) {
+    <?php
+    $site = $_GET["site"] ?? "";
+    $time = $_SESSION["time"] ?? 0;
+
+    if (!$site) {
+        if (time() > $time + 600) {
             ?>
 			<script>
 				location.href = "?site=check";
 			</script>
-		<?php
+		    <?php
         } else {
             include "sites/work.php";
         }
     } else {
-        include "sites/".$_GET["site"].".php";
+        include "sites/".$site.".php";
     }
     ?>
 </body>
