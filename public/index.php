@@ -1,5 +1,5 @@
 <?php
-require "database.inc.php";
+require "../database.inc.php";
 ?>
 <!doctype html>
 <html>
@@ -18,15 +18,15 @@ require "database.inc.php";
     if (!$site) {
         if (time() > $time + 600) {
             ?>
-			<script>
-				location.href = "?site=check";
-			</script>
-		    <?php
+                <script>
+                location.href = "?site=check";
+                </script>
+            <?php
         } else {
-            include "sites/work.php";
+            include "../sites/work.php";
         }
     } else {
-        include "sites/".$site.".php";
+        include "../sites/".$site.".php";
     }
     ?>
 </body>

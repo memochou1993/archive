@@ -104,7 +104,7 @@ $page = $_GET["page"] ?? 1;
                     <td><div align="center"><a href="?field=full-text&request=<?=$row["course_title"]?>"><?=$row["course_title"]?></a></div></td>
                     <td><div align="center"><a href="?field=full-text&request=<?=$row["period"]?>"><?=$row["period"]?></a><a href="?field=full-text&request=<?=$row["type"]?>"><?=$row["type"]?></a></div></td>
                     <td><?=$row["title"]?></td>
-		    <td><div align="center"><a href="sites/notify.php" target="_blank"><img src="icons/format/<?=$row["icon"]?>.png" width="64" height="64" /></a></div></td>
+		    <td><div align="center"><a href="?site=notify" target="_blank"><img src="icons/format/<?=$row["icon"]?>.png" width="64" height="64" /></a></div></td>
                     <!--		    
                     <td><div align="center"><a href="files/<?=$row["year"]?><?=$row["semester"]?>/<?=$row["unit"]?><?=$row["year"]?><?=$row["semester"]?>-<?=$row["course_id"]?>-<?=$row["number"]?>.<?=$row["format"]?>" target="_blank"><img src="icons/format/<?=$row["icon"]?>.png" width="64" height="64" /></a></div></td>
                     -->
